@@ -1,22 +1,21 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Gradle template
+.DS_Store
 .gradle
 /build/
+!gradle/wrapper/gradle-wrapper.jar
+/out/
+/target/
 
-# Ignore Gradle GUI config
-gradle-app.setting
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+bin/
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
-
+### IntelliJ IDEA ###
 .idea
-.properties
-"src/main/java/programmers/\354\247\225\352\262\200\353\213\244\353\246\254/"
-src/main/resources/
-.xml
+*.iws
+*.iml
+*.ipr
