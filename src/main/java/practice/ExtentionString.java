@@ -7,7 +7,7 @@ import java.util.List;
 public class ExtentionString {
 
     public static void main(String[] args) {
-        String fileName = "file.png"; //file.mp4
+        String fileName = "file.mp4"; //file.png   이미지 or 영상
         ExtentionString extentionString = new ExtentionString();
         String state = extentionString.solution(fileName);
 
@@ -16,7 +16,7 @@ public class ExtentionString {
 
     private String solution(String fileName) {
         int extentionIndex = fileName.indexOf(".");
-        String extention = fileName.substring(extentionIndex);
+        String extention = fileName.substring(extentionIndex + 1);
         return ExtentionType.findType(extention).getExtention();
     }
 }
