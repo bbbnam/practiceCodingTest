@@ -19,7 +19,7 @@ public class NumberOfIsland_BFS {
     int m, n;
 
     private int solution(char[][] grid) {
-        if (grid == null || grid.length == 0 || grid[0].length == 0) {
+        if (grid == null || grid.length == 0) {
             return 0;
         }
         m = grid.length;    //4
