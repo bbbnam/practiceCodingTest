@@ -11,8 +11,11 @@ import java.util.Map;
 
 public class SubArraySum {
     public static void main(String[] args) {
-        int[] nums = new int[]{3, 4, 7, 2, -3, 1, 4, 2};
-        int k = 7;
+//        int[] nums = new int[]{3, 4, 7, 2, -3, 1, 4, 2};
+//        int k = 7;
+
+        int[] nums = new int[]{1, 1, 1, 1, -2, 2, 4, 2};
+        int k = 3;
         SubArraySum subArraySum = new SubArraySum();
         //System.out.println(subArraySum.solution_byArray(nums, k));
         System.out.println(subArraySum.solution_byMap(nums, k));
