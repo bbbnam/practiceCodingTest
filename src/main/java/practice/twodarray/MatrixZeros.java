@@ -19,7 +19,7 @@ import java.util.Set;
 public class MatrixZeros {
     public static void main(String[] args) {
         int[][] grid = {{1,1,1},
-                        {1,0,1},
+                        {1,0,1,1},
                         {1,1,1}};
         new MatrixZeros().solve(grid);
     }
