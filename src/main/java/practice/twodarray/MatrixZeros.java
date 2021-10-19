@@ -46,7 +46,7 @@ public class MatrixZeros {
                 }
             }
         }
-        System.out.println("=============================");
+        System.out.println("==============================="+System.lineSeparator());
         print(grid);
     }
 
