@@ -29,5 +29,16 @@ public class MapDefault {
             Integer key = iterator.next();
             System.out.println("key : " + key + ", value : " + map.get(key));
         }
+
+        System.out.println("=========4==============");
+
+        // etc
+        ArrayList<Integer> keys = new ArrayList<>(map.keySet());
+        Collection<String> values = map.values();
+        int index = 0;
+        for (String value : values) {
+            System.out.println("key : " + keys.get(index) + ", values : " + value);
+            index++;
+        }
     }
 }
