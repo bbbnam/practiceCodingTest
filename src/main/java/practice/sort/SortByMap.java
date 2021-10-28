@@ -4,9 +4,9 @@ import java.util.*;
 
 public class SortByMap {
     public static void main(String[] args) {
-        //String[] words = {"i", "study", "inflearn", "i", "study", "coding"};
-        int k = 2;
-        String[] words = {"a", "b", "c", "a", "b", "c", "a"};
+        String[] words = {"i", "study", "inflearn", "i", "study", "coding"};
+        int k = 3;
+        //String[] words = {"a", "b", "c", "a", "b", "c", "a"};
         SortByMap sortByMap = new SortByMap();
         System.out.println(sortByMap.solve(words, k));
     }
