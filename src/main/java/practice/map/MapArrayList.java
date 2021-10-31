@@ -11,7 +11,6 @@ public class MapArrayList {
         int[] nums = {1,1,2,2,2,3,5,5,5,5};
         int k = 2;
         System.out.println(new MapArrayList().topKFrequent(nums, k));
-
     }
 
     public List<Integer> topKFrequent(int[] nums, int k) {
