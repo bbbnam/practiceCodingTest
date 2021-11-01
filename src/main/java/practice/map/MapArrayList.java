@@ -7,7 +7,6 @@ import java.util.Map;
 
 public class MapArrayList {
     public static void main(String[] args) {
-
         int[] nums = {1,1,2,2,2,3,5,5,5,5};
         int k = 2;
         System.out.println(new MapArrayList().topKFrequent(nums, k));
