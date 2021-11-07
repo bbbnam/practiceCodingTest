@@ -17,7 +17,7 @@ public class Fibonacci_top_down {
         bottomUp[1] =1;
         bottomUp[2] =1;
 
-        for(int i=3; i<=n; i++) {
+        for(int i = 3; i <= n; i++) {
             bottomUp[i] = bottomUp[i-1] + bottomUp[i-2];
         }
         return bottomUp[n];
