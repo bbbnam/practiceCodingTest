@@ -14,8 +14,8 @@ public class Fibonacci_top_down {
         int[] bottomUp = new int[1000];
         System.out.println("2 fibonacci 호출 :" + n);
 
-        bottomUp[1] =1;
-        bottomUp[2] =1;
+        bottomUp[1] = 1;
+        bottomUp[2] = 1;
 
         for(int i = 3; i <= n; i++) {
             bottomUp[i] = bottomUp[i-1] + bottomUp[i-2];
