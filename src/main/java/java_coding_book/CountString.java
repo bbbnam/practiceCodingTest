@@ -2,6 +2,7 @@ package java_coding_book;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class CountString {
     public static void main(String[] args) {
@@ -14,6 +15,10 @@ public class CountString {
         BookSolution_1 bookSolution1 = new BookSolution_1();
         Map<Character, Integer> result = bookSolution1.countDuplicateCharacters(str);
         System.out.println("map count : " + result.size());
+
+        BookSolution_2 bookSolution2 = new BookSolution_2();
+        Map<Character, Long> result2 = bookSolution2.countDuplicateCharacters(str);
+        System.out.println("map count2 : " + result2.size());
     }
 
     static class MySolution {
@@ -36,6 +41,15 @@ public class CountString {
 
                 result.compute(ch, (key, value) -> (value == null) ? 1 : ++value);
             }
+            return result;
+        }
+    }
+
+    static class BookSolution_2 {
+        Map<Character, Long> countDuplicateCharacters(String str) {
+            Map<Character, Long> result = str.chars()
+                    .mapToObj(ch -> (char) ch)
+                    .collect(Collectors.groupingBy(ch -> ch, Collectors.counting()));
             return result;
         }
     }
