@@ -2,9 +2,9 @@ package refactoring;
 
 public class AF_MyRefactoringRobot {
     private final String _name;
-    private static final int WALKS_COMMAND = 0;
-    private static final int STOPS_COMMAND = 1;
-    private static final int JUMPS_COMMAND = 2;
+    public static final int WALKS_COMMAND = 0;
+    public static final int STOPS_COMMAND = 1;
+    public static final int JUMPS_COMMAND = 2;
 
     public AF_MyRefactoringRobot(String name) {
         this._name = name;
