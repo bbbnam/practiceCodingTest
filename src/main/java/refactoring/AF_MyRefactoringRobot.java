@@ -12,7 +12,7 @@ public class AF_MyRefactoringRobot {
 
     public void order(int command) {
         if (command == WALKS_COMMAND) {
-            System.out.println(_name + " walks.");
+            System.out.println(_name + " walks."); //if문을 줄일 방법은?
         } else if (command == STOPS_COMMAND) {
             System.out.println(_name + " stops.");
         } else if (command == JUMPS_COMMAND) {
