@@ -1,7 +1,9 @@
 package refactoring.enumafter;
 
 public class Robot {
+
     private final String _name;
+
     public enum Command { // 이 enum은 별도로 두는게 어떤지?
         WALK,
         STOP,
