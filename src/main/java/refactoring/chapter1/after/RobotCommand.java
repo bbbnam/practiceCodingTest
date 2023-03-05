@@ -1,4 +1,4 @@
-package refactoring.after;
+package refactoring.chapter1.after;
 
 public class RobotCommand {
     private final String _name;

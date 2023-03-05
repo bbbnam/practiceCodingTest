@@ -1,4 +1,4 @@
-package refactoring;
+package refactoring.chapter1;
 
 public class AF_MyRefactoringRobot {
     private final String _name;

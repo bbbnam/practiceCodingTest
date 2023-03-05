@@ -1,4 +1,4 @@
-package refactoring.after;
+package refactoring.chapter1.after;
 
 public class Robot {
     private final String _name;

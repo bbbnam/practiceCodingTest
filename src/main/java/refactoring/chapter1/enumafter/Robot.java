@@ -1,4 +1,4 @@
-package refactoring.enumafter;
+package refactoring.chapter1.enumafter;
 
 public class Robot {
 
