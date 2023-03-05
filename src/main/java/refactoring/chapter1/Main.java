@@ -1,8 +1,6 @@
-package refactoring;
+package refactoring.chapter1;
 
-import refactoring.enumafter.Robot;
-
-import static refactoring.AF_MyRefactoringRobot.*;
+import refactoring.chapter1.enumafter.Robot;
 
 public class Main {
     public static void main(String[] args) {
