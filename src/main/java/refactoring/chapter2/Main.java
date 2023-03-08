@@ -1,5 +1,6 @@
 package refactoring.chapter2;
 
+import refactoring.chapter2.afterBreak.FindInt;
 import refactoring.chapter2.before.FindIntBefore;
 
 public class Main {
@@ -7,7 +8,7 @@ public class Main {
         int[] data = {
                 1, 9, 0, 2, 8, 5, 6, 3, 4, 7,
         };
-        if (FindIntBefore.find(data, 5)) {
+        if (FindInt.find(data, 5)) {
             System.out.println("Found!");
         } else {
             System.out.println("Not Found");
