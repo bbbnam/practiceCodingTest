@@ -10,7 +10,7 @@ public class Main {
         };
         if (FindInt.find(data, 5)) {
             System.out.println("Found!");
-        } else {
+        } else { // if else 문도 얼리 리턴 같은 식으로 하면 제거할 수 있을 거 같은데 void에서는 어떻게 하지?
             System.out.println("Not Found");
         }
     }
