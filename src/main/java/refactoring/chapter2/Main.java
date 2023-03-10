@@ -1,6 +1,7 @@
 package refactoring.chapter2;
 
-import refactoring.chapter2.afterBreak.FindInt;
+//import refactoring.chapter2.afterBreak.FindInt;
+import refactoring.chapter2.afterReturn.FindInt;
 import refactoring.chapter2.before.FindIntBefore;
 
 public class Main {
