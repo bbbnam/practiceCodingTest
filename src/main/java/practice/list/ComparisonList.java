@@ -3,6 +3,7 @@ package practice.list;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import practice.list.dto.Student;
 
@@ -42,5 +43,15 @@ public class ComparisonList {
         })).collect(Collectors.toList());
 
     System.out.println("중복되지 않은 results = " + results2.size());
+
+    // 단순 문자 리스트 비교 - 다른 방법
+    List<String> oldList = Arrays.asList("1", "2", "3", "4");
+    List<String> newList = Arrays.asList("3", "4", "5", "6");
+
+    List<String> resultList1 = oldList.stream()
+        .filter(old -> newList.stream().noneMatch(Predicate.isEqual(old)))
+        .collect(Collectors.toList());
+
+    System.out.println("resultList1 = " + resultList1);
   }
 }
